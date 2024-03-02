@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('pokedex.jpg');
+    background-size: cover;
+    /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-position: center;
+    /* Centra la imagen en el fondo */
+    height: 100vh;
+    /* Establece la altura del fondo igual a la altura visible del navegador */
+    margin: 0;
+    padding: 0;
+}
+
+
+.pokedex {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.pokedex:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.pokedex-top {
+    background-color: #e74c3c;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: #e74c3c;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+input[type="text"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #e74c3c;
+    background-color: transparent;
+    font-size: 18px;
+    color: #333;
+}
+
+input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #15173e;
+}
+
+#resultado {
+    margin-top: 20px;
+}
+
+p {
+    color: #444;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#error-message {
+    color: #c0392b;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pokedex-top img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.info-box {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sprite {
+    width: 200px;
+    /* Ajusta el ancho según sea necesario */
+    height: auto;
+    /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    left: 50%;
+    transform: translateX(100%);
+}
