@@ -2,22 +2,22 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokédex</title>
-    <link rel="stylesheet" href="{{ url_for(filename='styles.css') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 
 <body>
-    <div class="pokedex">
-        <div class="pokedex-top"></div>
-        <h1>Pokédex</h1>
-        <input type="text" id="pokemonInput" placeholder="Nombre del Pokémon...">
-        <button onclick="buscarPokemon()">Buscar</button>
-        <div id="resultado"></div>
-    </div>
+  <div class="pokedex">
+    <div class="pokedex-top"></div>
+    <h1>Pokédex</h1>
+    <input type="text" id="pokemonInput" placeholder="Nombre del Pokémon...">
+    <button onclick="buscarPokemon()">Buscar</button>
+    <div id="resultado"></div>
+  </div>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 
 </html>
